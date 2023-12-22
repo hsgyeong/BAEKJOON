@@ -12,9 +12,13 @@ public class Darius {
 		int K;
 		int D;
 		int A;
+		String n;
+		String m;
 		
 		K = sc.nextInt();
+		n = sc.next();
 		D = sc.nextInt();
+		m = sc.next();
 		A = sc.nextInt();
 		
 		if(K+A<D||D==0)
