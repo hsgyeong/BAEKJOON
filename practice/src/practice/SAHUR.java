@@ -10,47 +10,32 @@ public class SAHUR {
 		Scanner sc = new Scanner(System.in);
 		
 		int n;
-		int H;
-		int M;
+		int hour;
+		int minute;
 		
 		n = sc.nextInt();
 		
-		for(int i=0; i<n; i++)
+		for(int i=1; i<=n; i++)
 		{
-			H = sc.nextInt();
-			M = sc.nextInt();
+			hour = sc.nextInt();
+			minute = sc.nextInt();
+	
+		if(minute<45)
+		{	
+			if(hour==0)
+				hour=24;
 			
-			if(H==0&&M>45)
-			{	H = 0;
-				M = M-45;
-			}
-			else if(H==0&&M<45) {
-				H = 23;
-				M = (60+M)-45;
-			}
-			else if(H!=0&&M<45)
-			{
-				H = H-1;
-				M = (60+M)-45;
-			}
-			else if(H!=0&&M>45)
-			{	
-				M = M-45;}
-			else if(H==0&&M==0)
-			{
-				H = 23;
-				M = 60-45;
-			}
-			else if(H!=0&&M==0)
-			{
-				H = H-1;
-				M = 60-45;
-			}
-			
-			
-			System.out.println("Case #"+(i+1)+": "+H+" "+M);
-		}
+			hour = hour-1;
+			minute = minute+15;}
+		else if(minute>=45)
+		{	
+			if(minute==0)
+				minute=60;
 		
+			minute = minute-45;
+		}
+			System.out.println("Case #"+i+": "+hour+" "+minute);
+		}
 		
 	}
 
