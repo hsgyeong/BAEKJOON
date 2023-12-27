@@ -2,24 +2,23 @@ package practice;
 
 import java.util.Scanner;
 
-public class Long {
+public class Star2 {
 
 	public static void main(Strings[] args) {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
-		
 		int n;
-		int a;
-		
 		n = sc.nextInt();
-		a = n/4;
 		
-		for(int i=1; i<=a; i++)
+		for(int i=0; i<n; i++) 
 		{
-			System.out.print("long ");
+		for(int j=0; j<=i; j++)
+		{	
+			System.out.print("*");
 		}
-			System.out.print("int");
+		System.out.println("");
+		}
 	}
 
 }

@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class AsumB {
 
-	public static void main(String[] args) {
+	public static void main(Strings[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
 		int A;
 		int B;
 		int n=0;
-		String answer;
+		Strings answer;
 		int sum;
 		
 		n = sc.nextInt();

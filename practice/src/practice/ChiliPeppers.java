@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class ChiliPeppers {
 
-	public static void main(String[] args) {
+	public static void main(Strings[] args) {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
 		
 		int n;
-		String chili;
+		Strings chili;
 		int value=0;
 		int total=0;
 		
