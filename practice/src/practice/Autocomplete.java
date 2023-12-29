@@ -8,7 +8,7 @@ public class Autocomplete {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
-		Strings A;
+		String A;
 		
 		A = sc.next();
 		

@@ -8,8 +8,8 @@ public class Club {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
-		Strings c;
-		Strings answer = null;
+		String c;
+		String answer = null;
 		
 		c = sc.next();
 		

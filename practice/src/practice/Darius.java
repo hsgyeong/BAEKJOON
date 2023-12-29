@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Darius {
 
-	public static void main(Strings[] args) {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
@@ -12,8 +12,8 @@ public class Darius {
 		int K;
 		int D;
 		int A;
-		Strings n;
-		Strings m;
+		String n;
+		String m;
 		
 		K = sc.nextInt();
 		n = sc.next();

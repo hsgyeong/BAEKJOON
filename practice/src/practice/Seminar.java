@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Seminar {
 
-	public static void main(Strings[] args) {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
 		
-		Strings seminar;
+		String seminar;
 		int n;
 		n = sc.nextInt();
 		

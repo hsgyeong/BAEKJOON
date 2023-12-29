@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public class LineNumber {
 
-	public static void main(Strings[] args) {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
 		int N;
-		Strings t;
+		String t;
 		N = sc.nextInt();
 		sc.nextLine();
 		
-		Strings answer;
+		String answer;
 		
 		for(int i=1; i<=N; i++)
 		{	

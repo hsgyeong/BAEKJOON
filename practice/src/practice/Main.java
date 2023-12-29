@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Main {
 
-	public static void main(Strings[] args) {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
 		
 		while(true)
 		{
-			Strings name;
+			String name;
 			int age;
 			int weight;
 			

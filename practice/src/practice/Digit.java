@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Digit {
 
-	public static void main(Strings[] args) {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
-		Strings A;
-		Strings B;
-		Strings answer;
+		String A;
+		String B;
+		String answer;
 		
 		A = sc.next();
 		B = sc.next();
