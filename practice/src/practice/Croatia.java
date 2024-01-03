@@ -9,7 +9,7 @@ public class Croatia {
 		Scanner sc = new Scanner(System.in);
 
 		int count = 0;
-
+							
 		String alphabet;
 
 		alphabet = sc.next();
@@ -17,6 +17,12 @@ public class Croatia {
 		String[] croatia = {"c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="};
 
 		for (int i = 0; i < alphabet.length(); i++) {
+			
+			if (i + 3 < alphabet.length() && alphabet.substring(i, i + 3).equals(croatia[2])) {
+				count++;
+				break;
+			} 
+			
 			if (i + 2 < alphabet.length() && alphabet.substring(i, i + 2).equals(croatia[0]) ||
 				i + 2 < alphabet.length() && alphabet.substring(i, i + 2).equals(croatia[1]) ||
 				i + 2 < alphabet.length() && alphabet.substring(i, i + 2).equals(croatia[3]) ||
@@ -26,11 +32,11 @@ public class Croatia {
 				i + 2 < alphabet.length() && alphabet.substring(i, i + 2).equals(croatia[7])) 
 			{
 				count++;
-				i += 1;
+				i += 1;   
 			} else if (i + 3 < alphabet.length() && alphabet.substring(i, i + 3).equals(croatia[2])) {
 				count++;
-				i += 2;
-
+				i += 2;   
+ 
 			} else if (alphabet.substring(i, i + 1).equals("a") || alphabet.substring(i, i + 1).equals("b") ||
 				alphabet.substring(i, i + 1).equals("c") || alphabet.substring(i, i + 1).equals("d") ||
 				alphabet.substring(i, i + 1).equals("e") || alphabet.substring(i, i + 1).equals("f") ||
