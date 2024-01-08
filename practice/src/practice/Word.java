@@ -2,28 +2,23 @@ package practice;
 
 import java.util.Scanner;
 
-public class Factorial {
+public class Word {
 
-	public static void main(Word[] args) {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
+		String word;
 		int n;
-		int m;
-		int answer = 1;
+		char answer;
+		
+		word = sc.next();
 		n = sc.nextInt();
 		
-		for(int i=1; i<=n; i++)
-		{
-			m = n-i+1;
-			if(m<1)
-				break;
-			
-			answer *= m;
-			
-		}
+		answer = word.charAt(n-1);
 		
 		System.out.println(answer);
+		
 	}
 
 }

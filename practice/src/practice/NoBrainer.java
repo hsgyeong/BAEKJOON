@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class NoBrainer {
 
-	public static void main(String[] args) {
+	public static void main(Word[] args) {
 		// TODO Auto-generated method stub
 
 		
