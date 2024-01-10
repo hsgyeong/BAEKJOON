@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class A2798 {
 
-	public static void main(Word[] args) {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 
@@ -29,10 +29,13 @@ public class A2798 {
 				for (int k = j + 1; k < N; k++) {
 					sum = arr[i] + arr[j] + arr[k];
 
-					if ((sum == M) || (sum < M && answer < sum)) {
-					    answer = sum;
-					    break;
+					if (sum == M) {
+						answer = sum;
+						break;
 					}
+
+					else if (sum < M && answer < sum)
+						answer = sum;
 				}
 			}
 		}
