@@ -9,17 +9,17 @@ public class Darius {
 
 		Scanner sc = new Scanner(System.in);
 		
-		int K;
-		int D;
-		int A;
-		String n;
-		String m;
+		String score;
 		
-		K = sc.nextInt();
-		n = sc.next();
-		D = sc.nextInt();
-		m = sc.next();
-		A = sc.nextInt();
+		score = sc.next();
+				
+		char k = score.charAt(0);
+		char d = score.charAt(2);
+		char a = score.charAt(4);
+		
+		int K = (int)k-'0';
+		int D = (int)d-'0'; 
+		int A = (int)a-'0';
 		
 		if(K+A<D||D==0)
 			System.out.println("hasu");
