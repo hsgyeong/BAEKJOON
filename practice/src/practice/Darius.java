@@ -12,14 +12,11 @@ public class Darius {
 		String score;
 		
 		score = sc.next();
-				
-		char k = score.charAt(0);
-		char d = score.charAt(2);
-		char a = score.charAt(4);
+		String arr[] = score.split("/");
 		
-		int K = (int)k-'0';
-		int D = (int)d-'0'; 
-		int A = (int)a-'0';
+		int K = Integer.parseInt(arr[0]);
+		int D = Integer.parseInt(arr[1]);
+		int A = Integer.parseInt(arr[2]);
 		
 		if(K+A<D||D==0)
 			System.out.println("hasu");

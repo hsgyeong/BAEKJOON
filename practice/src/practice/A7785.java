@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.StringTokenizer;
 
@@ -25,8 +26,7 @@ public class A7785 {
 		int n;
 		n = Integer.parseInt(st.nextToken());
 		
-		ArrayList<String> work = new ArrayList<>();
-		ArrayList<String> answer = new ArrayList<>();
+		HashSet<String> work = new HashSet<>();
 		
 		for(int i=0; i<n; i++)
 		{
@@ -45,18 +45,15 @@ public class A7785 {
 			}
 		}
 		
-		for(int j=work.size()-1; j>=0; j--)
+		ArrayList<String> list = new ArrayList<>(work);
+	
+		Collections.sort(list, Comparator.reverseOrder());	
+		
+		for(String answer: list)
 		{
-			answer.add(work.get(j));
+			bw.write(answer+"\n");
 		}
-		
-		Collections.sort(answer, Collections.reverseOrder());
-		
-		for(String a :  answer)
-		{
-			bw.write(a+"\n");
-		}
-		
+			
 		br.close();
 		bw.flush();
 		bw.close();
