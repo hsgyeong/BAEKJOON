@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
 
 public class A1629 {
 
@@ -12,10 +13,11 @@ public class A1629 {
 		// TODO Auto-generated method stub
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		long A = Long.parseLong(br.readLine());
-		long B = Long.parseLong(br.readLine());
-		long C = Long.parseLong(br.readLine());
+		int A = Integer.parseInt(st.nextToken());
+		int B = Integer.parseInt(st.nextToken());
+		int C = Integer.parseInt(st.nextToken());
 		
 		long m = 1;
 		int answer;
@@ -25,11 +27,12 @@ public class A1629 {
 			m *= A; 
 		}
 		
-		answer = m%C;
+		answer = (int)(m%C);
 		
-		System.out.println(answer);
-		
-		
+		bw.write(Integer.toString(answer));
+		br.close();
+		bw.flush();
+		bw.close();
 	}
 
 }
